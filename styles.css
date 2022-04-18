@@ -10,6 +10,16 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* SECTION STYLES */
+section {
+  min-height: 100vh;
+  background-color: blanchedalmond;
+}
+
+section:nth-last-of-type(even) {
+  background-color: burlywood;
+}
+
 /* NAVIGATION STYLES */
 
 ul.nav-links {
@@ -17,6 +27,7 @@ ul.nav-links {
   display: flex;
   justify-content: flex-end;
   color: chocolate;
+  text-decoration: none;
 }
 
 nav#navbar {
@@ -26,8 +37,14 @@ nav#navbar {
 }
 a.link {
   padding: 10px;
+  color: brown;
+  text-decoration: none;
 }
 
+a.link:hover{
+  color: rgb(167, 148, 123);
+}
+/* Landing */
 #landing {
   /* background-image: url(./images/backp.jpg); */
   background: linear-gradient(
@@ -53,21 +70,20 @@ a.link {
   text-shadow: 2px 4px 4px rgb(144, 52, 15);
   margin: 5px;
 }
-
+/* About */
 #about {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5% 10%;
   gap: 30px;
-
-  background-color: black;
 }
 
 .about h2 {
-  color: chocolate;
+  color: rgb(112, 91, 64);
   padding-bottom: 20px;
   align-items: center;
+  text-shadow: 2px 1px 4px;
 }
 
 img {
@@ -75,6 +91,42 @@ img {
   width: 50%;
 }
 .about p {
-  color: burlywood;
+  color: rgb(70, 53, 32);
   text-shadow: ;
 }
+/* SKILLS */
+#skills{
+  padding 5% 10%;
+  color: whitesmoke;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: stretch;
+}
+
+#skills h2{
+  margin-bottom: 30px;
+  border-bottom: 3px solid whitesmoke;
+  width: fit-content;
+  color: rgb(112, 91, 64);
+  text-shadow: 2px 1px 4px;
+  margin-inline: auto;
+}
+
+.skills-container{
+  display: flex;
+  gap: 30px;
+  justify-content:center;
+}
+
+.card{
+  box-shadow: 1px 1px 10px;
+  padding: 20px;
+  width:30%;
+  text-align: center;
+}
+
+.card > i{
+  font-size: 60px;
+}
+
